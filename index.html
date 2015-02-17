@@ -5,19 +5,28 @@
     <title></title>
     <style>
         body{
-            height: 1000px;
-            background: linear-gradient(#1a1a1a, rgba(26, 26, 26, 0.23));
+            /*height: 1000px;*/
+            /*background: linear-gradient(#1a1a1a, rgba(26, 26, 26, 0.23));*/
             color: white;
             font-family: "Segoe UI Light", "Segoe UI Semilight", "Segoe UI", serif;
         }
-        div{
+        br{
+            clear: left;
+        }
+        .navdiv{
             float: left;
-            height: 200px;
+            height: 120px;
             border: 1px solid rgba(197, 197, 197, 0.50);
             margin: 1px;
-            margin-left: 0.2%;
-
+            margin-left: 0.1%;
             background-color: #cc0000;
+            overflow: hidden;
+        }
+        .navdiv>a{
+            padding: 100%;
+        }
+        .navdiv>span{
+            margin: 5px;
         }
         #goals{
             width: 34%;
@@ -30,8 +39,6 @@
             width: 25%;
             /*background-color: yellow;*/
         }
-
-
         #aboutweb{
             width: 28%;
             /*background-color: brown;*/
@@ -43,33 +50,52 @@
         #other{
             width: 36%;
         }
-        #goals:hover,#contact:hover,#aboutweb:hover,#aboutdevelopers:hover,#gallery:hover ,#other:hover{
-            background:repeating-linear-gradient(rgba(0, 0, 0, 0),black 200%  );
+        .navdiv:hover{
+            background-image: url(title.jpg);
+            background:repeating-linear-gradient(rgba(0, 0, 0, 0),black 200%);
             background-color: #cc0000;
 
         }
+        .contantdiv{
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
 
-        div>a{
-            margin: 5px;
-            font-size: 18px;
         }
+        h1{
+            color: black;
+        }
+
+
     </style>
 </head>
 <body>
 
 <header>
 <img src="title.jpg" width="100%"></header>
-<h1>We Will Educate You In Modern Style</h1>
+<h1 id="title">We Will Educate You In Modern Style</h1>
 <nav>
 
-<div id="goals">            <a>Goals</a>            </div>
-<div id="gallery">          <a>gallery</a>          </div>
-<div id="contact">          <a>Contact</a>          </div>
-<div id="aboutweb">         <a>About Web</a>        </div>
-<div id="aboutdevelopers">  <a>about developers</a> </div>
-<div id="other">            <a>other works</a>      </div>
+<div class="navdiv" id="goals" >           <span>Goals           </span> <a href="#h1"></a> </div>
+<div class="navdiv" id="gallery">          <span>Gallery         </span> <a></a> </div>
+<div class="navdiv" id="contact">          <span>Contact         </span> <a></a> </div>
+<div class="navdiv" id="aboutweb">         <span>About Web       </span> <a></a> </div>
+<div class="navdiv" id="aboutdevelopers">  <span>About developers</span> <a></a> </div>
+<div class="navdiv" id="other">            <span>Other works     </span> <a></a> </div>
 
 </nav>
+<br />
+<div class="contantdiv" id="goalsh">
+    <h1>Goals</h1> <hr />
+  
 
+
+
+</div>
+<!--<div class="contantdiv" id="galleryh">          <p>background-color</p></div>-->
+<!--<div class="contantdiv" id="contacth">          <p>background-color</p></div>-->
+<!--<div class="contantdiv" id="aboutwebh">         <p>background-color</p></div>-->
+<!--<div class="contantdiv" id="aboutdevelopersh">  <p>background-color</p></div>-->
+<!--<div class="contantdiv" id="otherh">            <p>background-color</p></div>-->
 </body>
 </html>
